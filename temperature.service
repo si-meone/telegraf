@@ -1,0 +1,9 @@
+[Unit]
+Description=Temperature systemd service.
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/pi/scripts/temperature.py
+
+[Install]
+WantedBy=multi-user.target

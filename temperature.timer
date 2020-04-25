@@ -1,0 +1,9 @@
+[Unit]
+Description=Run temperature check every 30s
+Requires=temperature.service
+[Timer]
+Unit=temperature.service
+OnUnitInactiveSec=30s
+AccuracySec=1s
+[Install]
+WantedBy=timers.target
